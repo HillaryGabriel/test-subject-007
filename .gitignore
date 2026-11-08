@@ -1,0 +1,48 @@
+# Environments, local install records and caches
+.venv/
+venv/
+.setup/
+.publish-work/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+settings*.json
+# Forensic evidence and generated case data - never source code
+[Cc]ases/
+[Ee]vidence/
+[Rr]eports/
+[Ee]xports/
+[Aa]rtifacts/
+*.raw
+*.mem
+*.dmp
+*.dump
+*.vmem
+*.lime
+*.bin
+*.exe
+*.dll
+*.sqlite
+*.log
+*.csv
+report*.html
+report*.pdf
+analysis-summary.json
+findings.json
+case.json
+audit.jsonl
+*.zip
+# Generated plans/search state are not source
+investigation-plan.json
+recent-locations*.json
+
+# Reviewed source template only; investigation CSV exports remain ignored
+!docs/hash-intelligence-template.csv
