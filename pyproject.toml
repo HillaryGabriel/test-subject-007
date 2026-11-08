@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-subject-007"
+version = "0.0.0"
+description = "Local-first, cross-platform Volatility 3 memory forensic workbench"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["volatility3==2.28.2", "reportlab>=4.2,<5", "defusedxml>=0.7.1,<1"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Security",
+]
+
+[project.optional-dependencies]
+analysis = ["yara-python>=4.5.1,<5", "capstone>=5.0.3,<6", "pycryptodome>=3.21,<4", "python-evtx>=0.8.1,<1"]
+dev = ["build>=1.2,<2"]
+
+[project.scripts]
+test-subject-007 = "test_subject_007.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["test_subject_007*"]

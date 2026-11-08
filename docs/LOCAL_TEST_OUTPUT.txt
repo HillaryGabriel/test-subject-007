@@ -1,0 +1,325 @@
+
+=== tests.test_core ===
+test_audit_chain (tests.test_core.CoreTests.test_audit_chain) ... ok
+test_audit_tampering_rejected (tests.test_core.CoreTests.test_audit_tampering_rejected) ... ok
+test_bad_integer_rejected (tests.test_core.CoreTests.test_bad_integer_rejected) ... ok
+test_cancel_stops_real_subprocess (tests.test_core.CoreTests.test_cancel_stops_real_subprocess) ... ok
+test_case_lock_prevents_parallel_open (tests.test_core.CoreTests.test_case_lock_prevents_parallel_open) ... ok
+test_case_reopen (tests.test_core.CoreTests.test_case_reopen) ... ok
+test_changed_image_blocks_analysis (tests.test_core.CoreTests.test_changed_image_blocks_analysis) ... ok
+test_command_separates_paths_and_offline_option (tests.test_core.CoreTests.test_command_separates_paths_and_offline_option) ... ok
+test_csv_sanitizes_formula_without_mutating_raw (tests.test_core.CoreTests.test_csv_sanitizes_formula_without_mutating_raw) ... ok
+test_directory_rejected (tests.test_core.CoreTests.test_directory_rejected) ... ok
+test_empty_image_rejected (tests.test_core.CoreTests.test_empty_image_rejected) ... ok
+test_empty_valid_output_is_valid_zero_rows (tests.test_core.CoreTests.test_empty_valid_output_is_valid_zero_rows) ... ok
+test_export_cannot_overwrite_evidence_or_case (tests.test_core.CoreTests.test_export_cannot_overwrite_evidence_or_case) ... ok
+test_export_rejects_evidence_hardlink (tests.test_core.CoreTests.test_export_rejects_evidence_hardlink) ... ok
+test_failure_not_misreported_as_empty_success (tests.test_core.CoreTests.test_failure_not_misreported_as_empty_success) ... ok
+test_hash_cancel (tests.test_core.CoreTests.test_hash_cancel) ... ok
+test_hash_matches_hashlib (tests.test_core.CoreTests.test_hash_matches_hashlib) ... ok
+test_html_report_escapes_attacker_content (tests.test_core.CoreTests.test_html_report_escapes_attacker_content) ... ok
+test_import_never_changes_image (tests.test_core.CoreTests.test_import_never_changes_image) ... ok
+test_invalid_timeout_and_symbol_separator (tests.test_core.CoreTests.test_invalid_timeout_and_symbol_separator) ... ok
+test_json_export_preserves_exact_text (tests.test_core.CoreTests.test_json_export_preserves_exact_text) ... ok
+test_missing_database_does_not_create_file (tests.test_core.CoreTests.test_missing_database_does_not_create_file) ... ok
+test_pagination (tests.test_core.CoreTests.test_pagination) ... ok
+test_partial_csv_retains_valid_rows (tests.test_core.CoreTests.test_partial_csv_retains_valid_rows) ... ok
+test_plugin_argument_types_and_windows_paths (tests.test_core.CoreTests.test_plugin_argument_types_and_windows_paths) ... ok
+test_relink_matching_image (tests.test_core.CoreTests.test_relink_matching_image) ... ok
+test_relink_wrong_image_retains_original (tests.test_core.CoreTests.test_relink_wrong_image_retains_original) ... ok
+test_search_is_literal_and_case_insensitive (tests.test_core.CoreTests.test_search_is_literal_and_case_insensitive) ... ok
+test_slug_cannot_traverse (tests.test_core.CoreTests.test_slug_cannot_traverse) ... ok
+test_source_change_during_run_detected (tests.test_core.CoreTests.test_source_change_during_run_detected) ... ok
+test_synthetic_subprocess_success_and_artifact_hashes (tests.test_core.CoreTests.test_synthetic_subprocess_success_and_artifact_hashes) ... ok
+test_timeout_stops_real_subprocess (tests.test_core.CoreTests.test_timeout_stops_real_subprocess) ... ok
+test_triage_resolves_current_plugin_names (tests.test_core.CoreTests.test_triage_resolves_current_plugin_names) ... ok
+test_warning_visible (tests.test_core.CoreTests.test_warning_visible) ... ok
+test_windows_paths_multiline_and_html_preserved (tests.test_core.CoreTests.test_windows_paths_multiline_and_html_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 12.114s
+
+OK
+
+=== tests.test_dfir ===
+test_analyst_conclusion_becomes_stale_with_new_evidence (tests.test_dfir.BinaryAndAssessmentTests.test_analyst_conclusion_becomes_stale_with_new_evidence) ... ok
+test_analyst_conclusion_requires_reason_and_references (tests.test_dfir.BinaryAndAssessmentTests.test_analyst_conclusion_requires_reason_and_references) ... ok
+test_cancellation_leaves_no_successful_import (tests.test_dfir.BinaryAndAssessmentTests.test_cancellation_leaves_no_successful_import) ... ok
+test_computed_hash_from_actual_bytes (tests.test_dfir.BinaryAndAssessmentTests.test_computed_hash_from_actual_bytes) ... ok
+test_conflicting_intelligence_visible (tests.test_dfir.BinaryAndAssessmentTests.test_conflicting_intelligence_visible) ... ok
+test_extracted_pe_hash_is_not_original_file_hash (tests.test_dfir.BinaryAndAssessmentTests.test_extracted_pe_hash_is_not_original_file_hash) ... ok
+test_full_memory_hash_is_not_imported_as_executable (tests.test_dfir.BinaryAndAssessmentTests.test_full_memory_hash_is_not_imported_as_executable) ... ok
+test_hash_shaped_string_not_promoted_to_computed_hash (tests.test_dfir.BinaryAndAssessmentTests.test_hash_shaped_string_not_promoted_to_computed_hash) ... ok
+test_known_bad_hash_requires_source_and_representation (tests.test_dfir.BinaryAndAssessmentTests.test_known_bad_hash_requires_source_and_representation) ... ok
+test_missing_intelligence_source_refused (tests.test_dfir.BinaryAndAssessmentTests.test_missing_intelligence_source_refused) ... ok
+test_report_keeps_hash_time_noise_and_analysis_distinct (tests.test_dfir.BinaryAndAssessmentTests.test_report_keeps_hash_time_noise_and_analysis_distinct) ... ok
+test_truncated_pe_explicit (tests.test_dfir.BinaryAndAssessmentTests.test_truncated_pe_explicit) ... ok
+test_different_host_same_record_kept_separate (tests.test_dfir.EventImportTests.test_different_host_same_record_kept_separate) ... ok
+test_duplicate_log_import_does_not_double_count (tests.test_dfir.EventImportTests.test_duplicate_log_import_does_not_double_count) ... ok
+test_event_import_records_source_and_timezone (tests.test_dfir.EventImportTests.test_event_import_records_source_and_timezone) ... ok
+test_event_source_records_tamper_rejected (tests.test_dfir.EventImportTests.test_event_source_records_tamper_rejected) ... ok
+test_limit_records_partial_not_successful_full_coverage (tests.test_dfir.EventImportTests.test_limit_records_partial_not_successful_full_coverage) ... ok
+test_local_and_network_logons_not_rdp (tests.test_dfir.EventImportTests.test_local_and_network_logons_not_rdp) ... ok
+test_lsm_local_is_not_remote (tests.test_dfir.EventImportTests.test_lsm_local_is_not_remote) ... ok
+test_missing_event_time_preserved_not_invented (tests.test_dfir.EventImportTests.test_missing_event_time_preserved_not_invented) ... ok
+test_ntlm_is_not_interactive (tests.test_dfir.EventImportTests.test_ntlm_is_not_interactive) ... ok
+test_rcm_auth_is_not_session_start (tests.test_dfir.EventImportTests.test_rcm_auth_is_not_session_start) ... ok
+test_same_size_source_mutation_detected (tests.test_dfir.EventImportTests.test_same_size_source_mutation_detected) ... ok
+test_wrong_provider_or_channel_not_misclassified (tests.test_dfir.EventImportTests.test_wrong_provider_or_channel_not_misclassified) ... ok
+test_xxe_is_rejected (tests.test_dfir.EventImportTests.test_xxe_is_rejected) ... ok
+test_113_pathext_rows_produce_no_script_findings (tests.test_dfir.NoiseAndPathTests.test_113_pathext_rows_produce_no_script_findings) ... ok
+test_arbitrary_appdata_application_not_blanket_suspicious (tests.test_dfir.NoiseAndPathTests.test_arbitrary_appdata_application_not_blanket_suspicious) ... ok
+test_download_execute_and_mshta_are_specific (tests.test_dfir.NoiseAndPathTests.test_download_execute_and_mshta_are_specific) ... ok
+test_encoded_argument_requires_primary_interpreter (tests.test_dfir.NoiseAndPathTests.test_encoded_argument_requires_primary_interpreter) ... ok
+test_expected_system_paths_and_custom_os_root (tests.test_dfir.NoiseAndPathTests.test_expected_system_paths_and_custom_os_root) ... ok
+test_exposed_script_and_jar_invocations_are_leads (tests.test_dfir.NoiseAndPathTests.test_exposed_script_and_jar_invocations_are_leads) ... ok
+test_file_reference_stays_background (tests.test_dfir.NoiseAndPathTests.test_file_reference_stays_background) ... ok
+test_known_good_never_whitelists_wrong_path (tests.test_dfir.NoiseAndPathTests.test_known_good_never_whitelists_wrong_path) ... ok
+test_missing_os_root_withholds_location_accusation (tests.test_dfir.NoiseAndPathTests.test_missing_os_root_withholds_location_accusation) ... ok
+test_normal_java_is_background_context (tests.test_dfir.NoiseAndPathTests.test_normal_java_is_background_context) ... ok
+test_notepad_script_argument_is_not_execution (tests.test_dfir.NoiseAndPathTests.test_notepad_script_argument_is_not_execution) ... ok
+test_office_parent_requires_compatible_lifetime (tests.test_dfir.NoiseAndPathTests.test_office_parent_requires_compatible_lifetime) ... ok
+test_reused_pid_does_not_attribute_wrong_path (tests.test_dfir.NoiseAndPathTests.test_reused_pid_does_not_attribute_wrong_path) ... ok
+test_service_display_and_evtx_handle_not_execution (tests.test_dfir.NoiseAndPathTests.test_service_display_and_evtx_handle_not_execution) ... ok
+test_unexpected_system_path_is_not_clean_by_name (tests.test_dfir.NoiseAndPathTests.test_unexpected_system_path_is_not_clean_by_name) ... ok
+test_conversion_preserves_explicit_offset (tests.test_dfir.TimestampTests.test_conversion_preserves_explicit_offset) ... ok
+test_missing_and_naive_never_use_analysis_time (tests.test_dfir.TimestampTests.test_missing_and_naive_never_use_analysis_time) ... ok
+test_network_created_retained_and_not_called_logon (tests.test_dfir.TimestampTests.test_network_created_retained_and_not_called_logon) ... ok
+test_network_missing_time_is_explicit (tests.test_dfir.TimestampTests.test_network_missing_time_is_explicit) ... ok
+test_old_process_time_still_fails_quality (tests.test_dfir.TimestampTests.test_old_process_time_still_fails_quality) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.729s
+
+OK
+
+=== tests.test_evidence_gui ===
+test_cards_do_not_display_effort_labels (tests.test_evidence_gui.EvidenceGuiTests.test_cards_do_not_display_effort_labels) ... ok
+test_case_switch_clears_assessment_draft (tests.test_evidence_gui.EvidenceGuiTests.test_case_switch_clears_assessment_draft) ... ok
+test_context_hidden_unless_requested (tests.test_evidence_gui.EvidenceGuiTests.test_context_hidden_unless_requested) ... ok
+test_copy_hash_uses_selected_actual_value (tests.test_evidence_gui.EvidenceGuiTests.test_copy_hash_uses_selected_actual_value) ... ok
+test_event_preview_shows_typed_times (tests.test_evidence_gui.EvidenceGuiTests.test_event_preview_shows_typed_times) ... ok
+test_evidence_lab_tabs_accessible (tests.test_evidence_gui.EvidenceGuiTests.test_evidence_lab_tabs_accessible) ... ok
+test_legacy_cached_noise_requires_rebuild (tests.test_evidence_gui.EvidenceGuiTests.test_legacy_cached_noise_requires_rebuild) ... ok
+test_minimum_lab_controls_remain_on_screen (tests.test_evidence_gui.EvidenceGuiTests.test_minimum_lab_controls_remain_on_screen) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.199s
+
+OK
+
+=== tests.test_gui ===
+test_all_pages_render (tests.test_gui.GuiTests.test_all_pages_render) ... ok
+test_background_task_returns_on_main_event_loop (tests.test_gui.GuiTests.test_background_task_returns_on_main_event_loop) ... ok
+test_case_switch_clears_previous_results (tests.test_gui.GuiTests.test_case_switch_clears_previous_results) ... ok
+test_catalog_builds_dynamic_options (tests.test_gui.GuiTests.test_catalog_builds_dynamic_options) ... ok
+test_engine_badge_is_actual_catalog_status (tests.test_gui.GuiTests.test_engine_badge_is_actual_catalog_status) ... ok
+test_export_folder_can_be_pasted_saved_and_copied (tests.test_gui.GuiTests.test_export_folder_can_be_pasted_saved_and_copied) ... ok
+test_failed_batch_auto_exports_and_opens_diagnostics (tests.test_gui.GuiTests.test_failed_batch_auto_exports_and_opens_diagnostics) ... ok
+test_import_actions_remain_visible_at_dialog_minimum_size (tests.test_gui.GuiTests.test_import_actions_remain_visible_at_dialog_minimum_size) ... ok
+test_missing_engine_is_reported_not_faked (tests.test_gui.GuiTests.test_missing_engine_is_reported_not_faked) ... ok
+test_new_brand_theme_and_navigation_marker (tests.test_gui.GuiTests.test_new_brand_theme_and_navigation_marker) ... ok
+test_no_case_actions_are_disabled (tests.test_gui.GuiTests.test_no_case_actions_are_disabled) ... ok
+test_no_release_label_and_export_path_visible_at_minimum_size (tests.test_gui.GuiTests.test_no_release_label_and_export_path_visible_at_minimum_size) ... ok
+test_short_window_scrolls_without_discarding_content (tests.test_gui.GuiTests.test_short_window_scrolls_without_discarding_content) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 5.069s
+
+OK
+
+=== tests.test_guided ===
+test_reset_backs_up_preferences_and_preserves_cases (tests.test_guided.CleanSettingsTests.test_reset_backs_up_preferences_and_preserves_cases) ... ok
+test_reset_is_optional (tests.test_guided.CleanSettingsTests.test_reset_is_optional) ... ok
+test_both_tabs_and_bottom_controls_reachable_at_minimum (tests.test_guided.GuidedGuiTests.test_both_tabs_and_bottom_controls_reachable_at_minimum) ... ok
+test_busy_goal_click_does_not_change_plan (tests.test_guided.GuidedGuiTests.test_busy_goal_click_does_not_change_plan) ... ok
+test_case_readiness_and_live_state (tests.test_guided.GuidedGuiTests.test_case_readiness_and_live_state) ... ok
+test_click_applies_without_running (tests.test_guided.GuidedGuiTests.test_click_applies_without_running) ... ok
+test_export_dialog_many_paths_stays_usable (tests.test_guided.GuidedGuiTests.test_export_dialog_many_paths_stays_usable) ... ok
+test_guided_is_default_and_nine_goals_exist (tests.test_guided.GuidedGuiTests.test_guided_is_default_and_nine_goals_exist) ... ok
+test_manual_checkbox_becomes_custom (tests.test_guided.GuidedGuiTests.test_manual_checkbox_becomes_custom) ... ok
+test_missing_case_disables_run (tests.test_guided.GuidedGuiTests.test_missing_case_disables_run) ... ok
+test_goal_metadata_is_preserved (tests.test_guided.TargetedIntegrationTests.test_goal_metadata_is_preserved) ... ok
+test_ip_match_in_network_only_output_is_found (tests.test_guided.TargetedIntegrationTests.test_ip_match_in_network_only_output_is_found) ... ok
+test_powershell_vbs_and_java_references (tests.test_guided.TargetedIntegrationTests.test_powershell_vbs_and_java_references) ... ok
+test_rdp_port_is_informational (tests.test_guided.TargetedIntegrationTests.test_rdp_port_is_informational) ... ok
+test_remote_tool_and_socket_reference_not_malware (tests.test_guided.TargetedIntegrationTests.test_remote_tool_and_socket_reference_not_malware) ... ok
+test_bracketed_ipv6_with_port (tests.test_guided.TargetedUnitTests.test_bracketed_ipv6_with_port) ... ok
+test_domain_boundaries (tests.test_guided.TargetedUnitTests.test_domain_boundaries) ... ok
+test_every_goal_has_windows_and_linux_plan (tests.test_guided.TargetedUnitTests.test_every_goal_has_windows_and_linux_plan) ... ok
+test_exact_ip_no_prefix_false_positive (tests.test_guided.TargetedUnitTests.test_exact_ip_no_prefix_false_positive) ... ok
+test_hash_and_literal_terms (tests.test_guided.TargetedUnitTests.test_hash_and_literal_terms) ... ok
+test_ip_in_url_with_port (tests.test_guided.TargetedUnitTests.test_ip_in_url_with_port) ... ok
+test_linux_endpoint_label (tests.test_guided.TargetedUnitTests.test_linux_endpoint_label) ... ok
+test_linux_psaux_uses_args_and_comm (tests.test_guided.TargetedUnitTests.test_linux_psaux_uses_args_and_comm) ... ok
+test_linux_remote_does_not_select_windows (tests.test_guided.TargetedUnitTests.test_linux_remote_does_not_select_windows) ... ok
+test_linux_sockstat_column_names (tests.test_guided.TargetedUnitTests.test_linux_sockstat_column_names) ... ok
+test_network_port_context_keeps_original (tests.test_guided.TargetedUnitTests.test_network_port_context_keeps_original) ... ok
+test_no_credentials_or_automatic_bulk_dump (tests.test_guided.TargetedUnitTests.test_no_credentials_or_automatic_bulk_dump) ... ok
+test_path_version_not_indicator (tests.test_guided.TargetedUnitTests.test_path_version_not_indicator) ... ok
+test_remote_executable_only_not_document_argument (tests.test_guided.TargetedUnitTests.test_remote_executable_only_not_document_argument) ... ok
+test_remote_registry_queries_are_explicit (tests.test_guided.TargetedUnitTests.test_remote_registry_queries_are_explicit) ... ok
+test_service_host_is_context_not_connection (tests.test_guided.TargetedUnitTests.test_service_host_is_context_not_connection) ... ok
+test_share_reference_still_searchable (tests.test_guided.TargetedUnitTests.test_share_reference_still_searchable) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 2.317s
+
+OK
+Settings preserved at: /tmp/tmpwezbkzub/settings-backup-2026-11-08T234353_0000-4212fe.json
+Settings preserved at: /tmp/tmpwezbkzub/recent-locations-backup-2026-11-08T234353_0000-4212fe.json
+
+=== tests.test_planning ===
+test_105_checked_does_not_abort_on_source (tests.test_planning.PlannerTests.test_105_checked_does_not_abort_on_source) ... ok
+test_all_blocked_does_not_make_empty_success (tests.test_planning.PlannerTests.test_all_blocked_does_not_make_empty_success) ... ok
+test_all_errors_name_the_plugin (tests.test_planning.PlannerTests.test_all_errors_name_the_plugin) ... ok
+test_case_plan_record_roundtrips_without_engine_classes (tests.test_planning.PlannerTests.test_case_plan_record_roundtrips_without_engine_classes) ... ok
+test_complete_preset_selects_all_declared_installed_and_expands_keys (tests.test_planning.PlannerTests.test_complete_preset_selects_all_declared_installed_and_expands_keys) ... ok
+test_complete_profile_is_explicit_broad_and_not_dump_everything (tests.test_planning.PlannerTests.test_complete_profile_is_explicit_broad_and_not_dump_everything) ... ok
+test_complete_unknown_os_is_explicit_not_a_fake_banners_preset (tests.test_planning.PlannerTests.test_complete_unknown_os_is_explicit_not_a_fake_banners_preset) ... ok
+test_defaults_are_honored_but_no_first_choice_is_guessed (tests.test_planning.PlannerTests.test_defaults_are_honored_but_no_first_choice_is_guessed) ... ok
+test_empty_list_string_is_not_a_target (tests.test_planning.PlannerTests.test_empty_list_string_is_not_a_target) ... ok
+test_exact_mft_plugin_is_not_its_ads_sibling (tests.test_planning.PlannerTests.test_exact_mft_plugin_is_not_its_ads_sibling) ... ok
+test_false_optional_checkbox_remains_off (tests.test_planning.PlannerTests.test_false_optional_checkbox_remains_off) ... ok
+test_file_input_with_spaces_and_file_uri (tests.test_planning.PlannerTests.test_file_input_with_spaces_and_file_uri) ... ok
+test_integer_and_lists_accept_hex_and_leading_zeroes (tests.test_planning.PlannerTests.test_integer_and_lists_accept_hex_and_leading_zeroes) ... ok
+test_list_issues_do_not_crash_remaining_plan (tests.test_planning.PlannerTests.test_list_issues_do_not_crash_remaining_plan) ... ok
+test_missing_input_file_is_deferred (tests.test_planning.PlannerTests.test_missing_input_file_is_deferred) ... ok
+test_pedump_requires_target_and_exclusive_address_space (tests.test_planning.PlannerTests.test_pedump_requires_target_and_exclusive_address_space) ... ok
+test_remote_input_is_not_fetched_during_preflight (tests.test_planning.PlannerTests.test_remote_input_is_not_fetched_during_preflight) ... ok
+test_required_boolean_matches_required_cli_flag (tests.test_planning.PlannerTests.test_required_boolean_matches_required_cli_flag) ... ok
+test_saved_key_overrides_four_key_preset_expansion (tests.test_planning.PlannerTests.test_saved_key_overrides_four_key_preset_expansion) ... ok
+test_specialist_becomes_ready_when_its_inputs_are_configured (tests.test_planning.PlannerTests.test_specialist_becomes_ready_when_its_inputs_are_configured) ... ok
+test_unconfigured_does_not_gain_an_invented_source (tests.test_planning.PlannerTests.test_unconfigured_does_not_gain_an_invented_source) ... ok
+test_unknown_plugin_and_os_mismatch_are_retained_as_gaps (tests.test_planning.PlannerTests.test_unknown_plugin_and_os_mismatch_are_retained_as_gaps) ... ok
+test_yara_needs_an_actual_rule_input (tests.test_planning.PlannerTests.test_yara_needs_an_actual_rule_input) ... ok
+test_deferred_selection_is_not_reported_as_full_success (tests.test_planning.PlanningReportTests.test_deferred_selection_is_not_reported_as_full_success) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.187s
+
+OK
+
+=== tests.test_preflight_gui ===
+test_cancel_does_not_start_or_change_case_metadata (tests.test_preflight_gui.PreflightGuiTests.test_cancel_does_not_start_or_change_case_metadata) ... ok
+test_cleared_option_is_not_silently_restored (tests.test_preflight_gui.PreflightGuiTests.test_cleared_option_is_not_silently_restored) ... ok
+test_configure_opens_the_correct_plugin_not_info (tests.test_preflight_gui.PreflightGuiTests.test_configure_opens_the_correct_plugin_not_info) ... ok
+test_custom_apply_does_not_clear_checks_or_values (tests.test_preflight_gui.PreflightGuiTests.test_custom_apply_does_not_clear_checks_or_values) ... ok
+test_default_printkey_widgets_do_not_override_complete_queries (tests.test_preflight_gui.PreflightGuiTests.test_default_printkey_widgets_do_not_override_complete_queries) ... ok
+test_dialog_shows_missing_fields_and_can_configure (tests.test_preflight_gui.PreflightGuiTests.test_dialog_shows_missing_fields_and_can_configure) ... ok
+test_empty_ready_list_disables_run_button (tests.test_preflight_gui.PreflightGuiTests.test_empty_ready_list_disables_run_button) ... ok
+test_execution_lists_deferred_as_not_run (tests.test_preflight_gui.PreflightGuiTests.test_execution_lists_deferred_as_not_run) ... ok
+test_select_all_runs_ready_only_after_confirmation (tests.test_preflight_gui.PreflightGuiTests.test_select_all_runs_ready_only_after_confirmation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.574s
+
+OK
+
+=== tests.test_publish ===
+test_manifest_is_an_allowlist (tests.test_publish.PublishingTests.test_manifest_is_an_allowlist) ... ok
+test_manifest_rejects_escape (tests.test_publish.PublishingTests.test_manifest_rejects_escape) ... ok
+test_manifest_rejects_missing_file (tests.test_publish.PublishingTests.test_manifest_rejects_missing_file) ... ok
+test_manifest_rejects_symlink_parent (tests.test_publish.PublishingTests.test_manifest_rejects_symlink_parent) ... ok
+test_subprocess_failure_is_not_success (tests.test_publish.PublishingTests.test_subprocess_failure_is_not_success) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+
+=== tests.test_real_engine ===
+test_installed_catalog (tests.test_real_engine.RealEngineTests.test_installed_catalog) ... skipped 'Volatility 3 is not installed'
+test_invalid_windows_image_fails_explicitly (tests.test_real_engine.RealEngineTests.test_invalid_windows_image_fails_explicitly) ... skipped 'Volatility 3 is not installed'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK (skipped=2)
+
+=== tests.test_release ===
+test_brand_and_version (tests.test_release.ReleaseTests.test_brand_and_version) ... ok
+test_doctor_reports_dependency_absence_and_new_application_name (tests.test_release.ReleaseTests.test_doctor_reports_dependency_absence_and_new_application_name) ... ok
+test_new_environment_override (tests.test_release.ReleaseTests.test_new_environment_override) ... ok
+test_renamed_worker_command_keeps_offline_and_separate_output (tests.test_release.ReleaseTests.test_renamed_worker_command_keeps_offline_and_separate_output) ... ok
+test_report_uses_new_brand_and_neutral_theme (tests.test_release.ReleaseTests.test_report_uses_new_brand_and_neutral_theme) ... ok
+test_schema_one_case_is_reopened_without_rehashing_or_rewriting_evidence (tests.test_release.ReleaseTests.test_schema_one_case_is_reopened_without_rehashing_or_rewriting_evidence) ... ok
+test_worker_uses_renamed_module (tests.test_release.ReleaseTests.test_worker_uses_renamed_module) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.038s
+
+OK
+
+=== tests.test_repairs ===
+test_all_export_formats_protect_the_evidence_location (tests.test_repairs.RepairTests.test_all_export_formats_protect_the_evidence_location) ... ok
+test_bundle_formula_escape_and_html_injection_protection (tests.test_repairs.RepairTests.test_bundle_formula_escape_and_html_injection_protection) ... ok
+test_compressed_container_not_silently_treated_as_raw (tests.test_repairs.RepairTests.test_compressed_container_not_silently_treated_as_raw) ... ok
+test_dump_finder_finds_names_and_skips_hidden_folders (tests.test_repairs.RepairTests.test_dump_finder_finds_names_and_skips_hidden_folders) ... ok
+test_dump_finder_limit_is_explicit (tests.test_repairs.RepairTests.test_dump_finder_limit_is_explicit) ... ok
+test_error_stdout_is_not_a_header (tests.test_repairs.RepairTests.test_error_stdout_is_not_a_header) ... ok
+test_export_failures_do_not_pretend_to_be_complete (tests.test_repairs.RepairTests.test_export_failures_do_not_pretend_to_be_complete) ... ok
+test_export_paths_survive_reopening_case (tests.test_repairs.RepairTests.test_export_paths_survive_reopening_case) ... ok
+test_failure_report_csv_is_explicit_diagnostic_not_fake_finding (tests.test_repairs.RepairTests.test_failure_report_csv_is_explicit_diagnostic_not_fake_finding) ... ok
+test_file_path_quotes_uri_and_spaces (tests.test_repairs.RepairTests.test_file_path_quotes_uri_and_spaces) ... ok
+test_integrity_mismatch_overrides_successful_run_assessment (tests.test_repairs.RepairTests.test_integrity_mismatch_overrides_successful_run_assessment) ... ok
+test_latest_attempt_prevents_repeated_run_double_counting (tests.test_repairs.RepairTests.test_latest_attempt_prevents_repeated_run_double_counting) ... ok
+test_latest_failure_does_not_silently_use_old_success (tests.test_repairs.RepairTests.test_latest_failure_does_not_silently_use_old_success) ... ok
+test_legacy_export_destination_can_be_recovered_from_audit (tests.test_repairs.RepairTests.test_legacy_export_destination_can_be_recovered_from_audit) ... ok
+test_log_combines_stdout_stderr_and_engine_log (tests.test_repairs.RepairTests.test_log_combines_stdout_stderr_and_engine_log) ... ok
+test_minidump_rejected_before_kernel_analysis (tests.test_repairs.RepairTests.test_minidump_rejected_before_kernel_analysis) ... ok
+test_observable_extraction_validates_ip_syntax (tests.test_repairs.RepairTests.test_observable_extraction_validates_ip_syntax) ... ok
+test_repeated_exports_never_overwrite_prior_report (tests.test_repairs.RepairTests.test_repeated_exports_never_overwrite_prior_report) ... ok
+test_report_bundle_all_formats_have_real_paths_and_hashes (tests.test_repairs.RepairTests.test_report_bundle_all_formats_have_real_paths_and_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.565s
+
+OK
+
+=== tests.test_workbench ===
+test_framework_path_is_not_domain (tests.test_workbench.ContextTests.test_framework_path_is_not_domain) ... ok
+test_network_field_retains_endpoint (tests.test_workbench.ContextTests.test_network_field_retains_endpoint) ... ok
+test_pdb_id_and_argument_are_not_computed_hashes (tests.test_workbench.ContextTests.test_pdb_id_and_argument_are_not_computed_hashes) ... ok
+test_unc_is_not_proof_of_network_session (tests.test_workbench.ContextTests.test_unc_is_not_proof_of_network_session) ... ok
+test_version_path_is_excluded_not_network_ioc (tests.test_workbench.ContextTests.test_version_path_is_excluded_not_network_ioc) ... ok
+test_case_terms_are_searched_but_not_labeled_malware (tests.test_workbench.FindingTests.test_case_terms_are_searched_but_not_labeled_malware) ... ok
+test_different_pid_module_is_not_correlated (tests.test_workbench.FindingTests.test_different_pid_module_is_not_correlated) ... ok
+test_document_argument_in_startup_is_not_executable_finding (tests.test_workbench.FindingTests.test_document_argument_in_startup_is_not_executable_finding) ... ok
+test_failed_latest_same_options_replaces_previous_success (tests.test_workbench.FindingTests.test_failed_latest_same_options_replaces_previous_success) ... ok
+test_implausible_process_is_not_counted_as_plausible (tests.test_workbench.FindingTests.test_implausible_process_is_not_counted_as_plausible) ... ok
+test_java_reference_is_reviewed_without_claiming_malware (tests.test_workbench.FindingTests.test_java_reference_is_reviewed_without_claiming_malware) ... ok
+test_malfind_jump_maps_within_same_pid_only (tests.test_workbench.FindingTests.test_malfind_jump_maps_within_same_pid_only) ... ok
+test_report_bundle_contains_complete_finding_sidecars (tests.test_workbench.FindingTests.test_report_bundle_contains_complete_finding_sidecars) ... ok
+test_startup_finding_includes_specific_pid_and_references (tests.test_workbench.FindingTests.test_startup_finding_includes_specific_pid_and_references) ... ok
+test_two_registry_queries_are_not_collapsed (tests.test_workbench.FindingTests.test_two_registry_queries_are_not_collapsed) ... ok
+test_unavailable_profile_plugins_are_in_scope_warning (tests.test_workbench.FindingTests.test_unavailable_profile_plugins_are_in_scope_warning) ... ok
+test_unnamed_module_range_does_not_become_identified_module (tests.test_workbench.FindingTests.test_unnamed_module_range_does_not_become_identified_module) ... ok
+test_incremental_reads_do_not_repeat_output (tests.test_workbench.LiveTests.test_incremental_reads_do_not_repeat_output) ... ok
+test_live_events_arrive_before_subprocess_completion (tests.test_workbench.LiveTests.test_live_events_arrive_before_subprocess_completion) ... ok
+test_partial_unicode_sequence_is_preserved (tests.test_workbench.LiveTests.test_partial_unicode_sequence_is_preserved) ... ok
+test_progress_cr_and_all_streams_and_final_chunk (tests.test_workbench.LiveTests.test_progress_cr_and_all_streams_and_final_chunk) ... ok
+test_truncated_log_can_be_read_again (tests.test_workbench.LiveTests.test_truncated_log_can_be_read_again) ... ok
+test_catalog_resolution_does_not_invent_missing_plugins (tests.test_workbench.ProfileTests.test_catalog_resolution_does_not_invent_missing_plugins) ... ok
+test_linux_profile_does_not_select_windows_plugins (tests.test_workbench.ProfileTests.test_linux_profile_does_not_select_windows_plugins) ... ok
+test_run_key_profile_expands_explicit_keys (tests.test_workbench.ProfileTests.test_run_key_profile_expands_explicit_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.489s
+
+OK
+
+=== tests.test_workspace_gui ===
+test_checkboxes_survive_search_filter (tests.test_workspace_gui.WorkspaceGuiTests.test_checkboxes_survive_search_filter) ... ok
+test_findings_filter_and_detail_references (tests.test_workspace_gui.WorkspaceGuiTests.test_findings_filter_and_detail_references) ... ok
+test_live_pause_only_pauses_view_and_filter_can_replay (tests.test_workspace_gui.WorkspaceGuiTests.test_live_pause_only_pauses_view_and_filter_can_replay) ... ok
+test_live_progress_is_stage_specific_and_elapsed_visible (tests.test_workspace_gui.WorkspaceGuiTests.test_live_progress_is_stage_specific_and_elapsed_visible) ... ok
+test_preset_selects_installed_only_and_reports_missing (tests.test_workspace_gui.WorkspaceGuiTests.test_preset_selects_installed_only_and_reports_missing) ... ok
+test_run_checked_expands_registry_keys (tests.test_workspace_gui.WorkspaceGuiTests.test_run_checked_expands_registry_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.600s
+
+OK
+
+TOTAL: 230 tests; 228 passed; 2 skipped; 0 failures; 0 errors. 39.6s

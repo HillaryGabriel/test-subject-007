@@ -1,0 +1,9 @@
+include README.md LICENSE SECURITY.md THIRD_PARTY_NOTICES.md
+include requirements.txt requirements-analysis.txt
+include START-WINDOWS.cmd START-LINUX.sh INSTALL-WINDOWS.cmd INSTALL-LINUX.sh
+include .gitignore .gitattributes PUBLIC-FILES.txt
+include RUN-LINUX.sh RUN-WINDOWS.cmd RUN-TEST-SUBJECT-007.sh
+recursive-include .github *.yml
+recursive-include docs *.md *.png *.txt
+recursive-include scripts *.py *.ps1 *.sh
+recursive-include tests *.py
