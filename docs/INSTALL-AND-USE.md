@@ -204,23 +204,8 @@ Collect Selected PE
 
 SHA-256 is calculated only from actual recovered or supplied executable bytes.
 
-### 7. RDP investigations
 
-For stronger RDP timelines, import relevant Windows event evidence such as:
-
-```text
-Security.evtx
-
-Microsoft-Windows-TerminalServices-
-RemoteConnectionManager/Operational
-
-Microsoft-Windows-TerminalServices-
-LocalSessionManager/Operational
-```
-
-Keep authentication time, process creation time, and network-object creation time separate.
-
-### 8. Export
+### 7. Export
 
 Export:
 
